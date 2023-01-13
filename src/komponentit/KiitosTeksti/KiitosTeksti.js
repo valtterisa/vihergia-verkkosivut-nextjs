@@ -7,7 +7,7 @@ export const KiitosTeksti = () => {
       <h1>Kiitos yhteydenotostasi!</h1>
         <div className='kiitos-content'>
             <p>Otamme sinuun yhteyttä mahdollisimman pian.</p>
-            <p>Voit palata etusivulle <Link href='http://localhost:3001/'>tästä</Link></p>
+            <p>Voit palata etusivulle <Link href='https://www.vihergia.fi/'>tästä</Link></p>
         </div>
     </div>
   )
