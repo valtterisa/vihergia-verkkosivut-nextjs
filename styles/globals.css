@@ -333,7 +333,7 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   object-fit: contain;
 }
 
@@ -571,16 +571,18 @@ video {
   }
 
   .navbar-logo.active > img {
-    top: -0.13cm;
+    height: 100px;
   }
 
   .btn--offer {
     display: none;
   }
 
-  .menu-icon > .svg-inline--fa {
-    vertical-align: -.22em !important;
-  }
+  /* .menu-icon > .svg-inline--fa {
+    vertical-align: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+  } */
 
   .menu-icon {
     display: block;
@@ -1008,7 +1010,7 @@ video {
   align-items: center;
   max-width: 100%;
   margin: 0 auto;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
 .team-content {

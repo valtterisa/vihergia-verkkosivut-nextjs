@@ -56,7 +56,7 @@ export const TarjousForm = () => {
           
           <input type="hidden" name="_subject" value="Tarjouspyyntö verkkosivut" />
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="http://localhost:3000/kiitos" />
+          <input type="hidden" name="_next" value="https://www.vihergia.fi/kiitos" />
           <input type="hidden" name="_template" value="box" />
 
           <Button buttonStyle={'btn--submit'}>LÄHETÄ</Button>
