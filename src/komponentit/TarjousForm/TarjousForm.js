@@ -36,6 +36,8 @@ export const TarjousForm = () => {
             <input type="text" className='emailTarjous' name="Puhelinnumero" required placeholder='Puhelinnumero*'/>
 
             <input type="text" className='emailTarjous' name="Osoite" required placeholder='Kohteen osoite*'/>
+                  
+            <input type="text" className='emailTarjous' name="Kulutus" required placeholder='Arvioitu sähkönkulutus (kWh/vuosi)*'/>
 
             <div className='tarjous-checkbox'>
               <input type="checkbox" id="palvelu1" name="Aurinkopaneelien myynti- ja asennus" value='Kyllä' onChange={handleChange}/>
