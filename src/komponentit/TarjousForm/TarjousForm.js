@@ -43,7 +43,7 @@ export const TarjousForm = () => {
               <input type="checkbox" id="palvelu1" name="Aurinkopaneelien myynti- ja asennus" value='Kyllä' onChange={handleChange}/>
               <label> Aurinkopaneelien asennus</label><br/>
               <input type="checkbox" id="palvelu2" name="Katon pinnoitus- ja korjaustyot" value='Kyllä' onChange={handleChange}/>
-              <label> Katon pinnoitu- ja korjaustyöt</label><br/>
+              <label> Katon pinnoitus- ja korjaustyöt</label><br/>
               <input type="checkbox" id="palvelu3" name="Ilmalämpöpumppujen asennus" value='Kyllä' onChange={handleChange}/>
               <label> Ilmalämpöpumppujen asennus</label>
             </div>
