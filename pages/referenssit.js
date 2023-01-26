@@ -29,7 +29,7 @@ export const Referenssit = () => {
 	        <meta property="og:locale" content="fi_FI" />
 	        <meta property="og:type" content="website" />
 	        <meta property="og:title" content="Palvelumme - Vihergia Oy" />
-	        <meta property="og:description" content="Vihergia Oy on aurinkopaneelien myynti- ja asennussyritys. Toimimme pääosin Etelä-Suomessa yrityksen sijainnin vuoksi, mutta tarpeen tullen toteutamme asennuksia myös muualla Suomessa. Ota meihin yhteyttä ja katsotaan hommat kuntoon sijainnista riippumatta." />
+	        <meta property="og:description" content="Tutustu meidän valmiisiin kohteisiin. Kuvien ohessa näkyy aurinkopaneelien malli, määrä ja niiden tuottama teho." />
 	        <meta name="keywords" content="Vihergia, vihergia, Vihergia Oy, vihreä, energia, green, energy, Uusimaa, Helsinki, Lahti, Aurinkopaneelit, aurinkopaneeli,
           aurinko, solar, panel, paneeli, asennus, installation, palvelu, service, reliable, luotettava, yritys, etelä, suomi, koko, Koko, Etelä" />
           <meta property="og:url" content="https://vihergia.fi/referenssit" />
