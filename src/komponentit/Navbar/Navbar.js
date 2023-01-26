@@ -3,12 +3,14 @@ import { Button } from '../Button/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Squash as Hamburger } from 'hamburger-react'
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const Navbar = () => {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const [isOpen, setOpen] = useState(false)
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -24,6 +26,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     showButton();
+    setOpen();
   }, []);
 
   return (
@@ -37,7 +40,8 @@ export const Navbar = () => {
             
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <FontAwesomeIcon icon={click ? faClose : faBars } />
+            {/* <FontAwesomeIcon icon={click ? faClose : faBars } /> */}
+            <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           
@@ -69,6 +73,10 @@ export const Navbar = () => {
               <Link href='/tietoa-meista' className='nav-links' onClick={closeMobileMenu}>
                 Tietoa meistä
               </Link>
+            </li>
+
+            <li className='nav-item-tarjous'>
+              <Link href="/palvelumme/#tarjous" onClick={closeMobileMenu} className='nav-links-tarjous'>PYYDÄ TARJOUS</Link>
             </li>
             
           </ul>

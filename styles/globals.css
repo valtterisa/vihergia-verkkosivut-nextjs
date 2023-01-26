@@ -482,7 +482,12 @@ video {
 }
 
 .nav-item {
+  height: 70px;
+}
+
+.nav-item-tarjous {
   height: 80px;
+  display: none;
 }
 
 .nav-links {
@@ -503,7 +508,7 @@ video {
 }
 
 .nav-links.active {
-  border-bottom: 4px solid #338055;
+  background-color: #12532e; 
 }
 
 .nav-links-mobile {
@@ -546,10 +551,38 @@ video {
   .nav-links {
     text-align: center;
     padding: 30px 0 30px 0;
-    width: 100%;
+    width: 50%;
     font-size: 20px;
     display: table;
     margin: 0;
+    border-bottom: 1px solid lightgray; 
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-item-tarjous {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: none;
+    width: 100%;
+    color: white;
+  }
+
+  .nav-links-tarjous {
+    color: white;
+    background-color: green;
+    text-align: center; 
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 1rem;
+    width: 50%;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 4px;
   }
 
   .nav-links:hover {
@@ -725,7 +758,7 @@ video {
 
 .aurinko-kuva {
   align-items: right;
-  background : url('../public/referenssikuva1.jpg') no-repeat center;
+  background : url('../public/referenssikuva1.jpg') no-repeat 100% 35%;
   font-weight: 700;
   background-size: 450px 700px;
   width: 450px;
@@ -767,9 +800,9 @@ video {
   }
 
   .aurinko-kuva {
-      background-size: 300px 300px;
+      background-size: 300px 400px;
       width: 300px;
-      height: 300px;
+      height: 400px;
       margin: 20px 0 0 0; 
   }
 

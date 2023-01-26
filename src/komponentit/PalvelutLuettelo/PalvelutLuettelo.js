@@ -8,25 +8,6 @@ export const PalvelutLuettelo = () => {
         <h1>Aurinkoenergia</h1>
         
         <div className='palvelut-content'>
-            {/* <div className='palvelut-content-left'>
-              <h2>Aurinkopaneelien myynti- ja asennuspalvelut</h2><br/>
-              <p>Vihreä energia on tulevaisuudessa avainasemassa.
-                Kauttamme saat ostettua tehokkaat aurinkopaneelit katollesi
-                ja myös niiden asennuspalvelun.
-              </p>
-              <h2>Ilmalämpöpumppujen asennuspalvelut</h2><br/>
-              <p>Ilmalämpöpumput laskevat lämmityskuluja huomattavasti. 
-                Kasvaneiden energiakustannusten takia ilmalämpöpumppu on kriittinen osa 
-                kiinteistön lämmitystä. Meiltä saat ostettua ilmalämpöpumpun ja sen asennuksen
-                kiinteistöösi. 
-              </p>
-              <h2>Katon pinnoitukset- ja korjauspalvelut</h2><br/>
-              <p>Onko katto päässyt rapistumaan vuosien kuluessa? Vai onko tiiliä irronut?
-                Meiltä saat ostettua myös katon pinnoitus- ja korjauspalvelut. Varmistamme, että 
-                kattosi saa parhaan käsittelyn ja siitä tulee uudenveroinen.
-              </p>
-            </div> */}
-          
             <div className='aurinko-content'>
               <div className='aurinko-info'>
                 <h2>Aurinkopaneelien myynti- ja asennuspalvelut</h2>
@@ -65,9 +46,6 @@ export const PalvelutLuettelo = () => {
                 </div>
               </div>
 
-              {/* <div className='aurinko-kuva'>
-
-              </div> */}
                 <div className='vl'></div>
 
                 <div className='ilma-info'>
