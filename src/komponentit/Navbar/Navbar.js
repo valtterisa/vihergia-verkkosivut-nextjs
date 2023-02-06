@@ -17,7 +17,7 @@ export const Navbar = () => {
 
     // määritellään milloin hampurilaismenu näkyy
     const showButton = () => {
-      if (window.innerWidth <= 960) {
+      if (window.innerWidth <= 1024) {
         setButton(false);
       } else {
         setButton(true);

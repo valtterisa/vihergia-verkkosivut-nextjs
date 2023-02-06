@@ -519,7 +519,7 @@ video {
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .NavbarItems {
     position: absolute;
   }
@@ -884,7 +884,7 @@ video {
   height: 400px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .kohde-kuva1, .kohde-kuva2, .kohde-kuva3{
       background-size: 300px 300px;
       width: 300px;
@@ -1385,3 +1385,52 @@ video {
       height: 450px;
   }
 } 
+
+/* 404.css */
+.error-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 2rem 0 2rem; 
+  height: 70vh; 
+  background-color: rgba(199, 198, 190, 0.1); 
+}
+
+.error-container > h1 {
+  font-size: 60px;
+}
+
+.error-container > p {
+  text-align: center;
+  padding: 2rem 0 2rem 0; 
+  font-size: 25px;
+}
+
+.error-link {
+  display: flex;
+  justify-content: center; 
+  text-decoration: none; 
+  padding: 2rem 0 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .error-container > h1 {
+    font-size: 40px;
+  }
+
+  .error-container > p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .error-container > h1 {
+    font-size: 40px;
+  }
+
+  .error-container > p {
+    font-size: 20px;
+  }
+}
+
+
