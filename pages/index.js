@@ -7,6 +7,7 @@ import { Info } from '../src/komponentit/Info/Info'
 import { Team } from '../src/komponentit/Team/Team'
 import { ReferenssitInfo } from '../src/komponentit/ReferenssitInfo/ReferenssitInfo'
 import { Footer } from '../src/komponentit/Footer/Footer'
+import Cookies from '../src/komponentit/Cookies';
 
 export default function Etusivu() {
 
@@ -46,12 +47,10 @@ export default function Etusivu() {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Head>
-      <Navbar/>
       <HeroSection />
       <Info />
       <Team />
       <ReferenssitInfo />
-      <Footer />
     </>
   );
 }

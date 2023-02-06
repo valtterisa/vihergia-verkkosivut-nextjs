@@ -4,6 +4,7 @@ import { Navbar } from '../src/komponentit/Navbar/Navbar'
 import { PalvelutLuettelo } from '../src/komponentit/PalvelutLuettelo/PalvelutLuettelo'
 import { TarjousForm } from '../src/komponentit/TarjousForm/TarjousForm'
 import { Footer } from '../src/komponentit/Footer/Footer'
+import Cookies from '../src/komponentit/Cookies';
 
 export const Palvelumme = () => {
 
@@ -44,10 +45,8 @@ export const Palvelumme = () => {
           <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         </Head>
-      <Navbar/>
       <PalvelutLuettelo />
       <TarjousForm />
-      <Footer />
     </>
   )
 }

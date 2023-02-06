@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Navbar } from '../src/komponentit/Navbar/Navbar'
 import { TietosuojaselosteContent } from '../src/komponentit/TietosuojaselosteContent/TietosuojaselosteContent'
 import { Footer } from '../src/komponentit/Footer/Footer'
+import Cookies from '../src/komponentit/Cookies'
 
 export const Tietosuojaseloste = () => {
 
@@ -24,9 +25,7 @@ export const Tietosuojaseloste = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
       </Head>
-      <Navbar />
       <TietosuojaselosteContent />
-      <Footer />
     </>
   )
 }
