@@ -36,7 +36,7 @@ export const Footer = () => {
             <div className='social-icons'>
             
             <Link
-              className='social-icon-link facebook' href='https://instagram.com/vihergia_oy?igshid=YmMyMTA2M2Y=' target='_blank' aria-label='Facebook'>
+              className='social-icon-link facebook' href='https://www.facebook.com/people/Vihergia-Oy/100089641868454/' target='_blank' aria-label='Facebook'>
               <FontAwesomeIcon icon={faFacebookF} />
             </Link>
 
