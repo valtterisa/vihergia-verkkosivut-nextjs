@@ -28,20 +28,20 @@ export const Footer = () => {
               <Link href='/palvelumme'>Palvelumme</Link>
               <Link href='/yhteystiedot'>Yhteystiedot</Link>
               <Link href='/referenssit'>Referenssit</Link>
-              <Link href="/palvelumme/#tarjous"><Button className='btns' buttonStyle='btn--primary' buttonSize='btn--small'>
-              PYYDÄ TARJOUS</Button></Link>
+              <Link href='/tietoa-meista'>Tietoa meistä</Link>
+              <Link href="/palvelumme/#tarjous"><Button className='btns' buttonStyle='btn--primary' buttonSize='btn--small'>PYYDÄ TARJOUS</Button></Link>
             </div>
           
           <div className='footer-contact'>
             <div className='social-icons'>
             
             <Link
-              className='social-icon-link facebook' href='/' target='_blank' aria-label='Facebook'>
+              className='social-icon-link facebook' href='https://instagram.com/vihergia_oy?igshid=YmMyMTA2M2Y=' target='_blank' aria-label='Facebook'>
               <FontAwesomeIcon icon={faFacebookF} />
             </Link>
 
             <Link
-              className='social-icon-link instagram' href='/' target='_blank' aria-label='Instagram'>
+              className='social-icon-link instagram' href='https://instagram.com/vihergia_oy?igshid=YmMyMTA2M2Y=' target='_blank' aria-label='Instagram'>
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
             
