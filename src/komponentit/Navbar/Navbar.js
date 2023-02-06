@@ -2,18 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '../Button/Button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Squash as Hamburger } from 'hamburger-react'
-import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const Navbar = () => {
-    const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
     const [isOpen, setOpen] = useState(false)
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    const handleClick = () => setOpen(!isOpen);
+    const closeMobileMenu = () => setOpen(false);
 
     // määritellään milloin hampurilaismenu näkyy
     const showButton = () => {
@@ -26,7 +22,6 @@ export const Navbar = () => {
 
   useEffect(() => {
     showButton();
-    setOpen();
   }, []);
 
   return (
@@ -43,7 +38,7 @@ export const Navbar = () => {
             {/* <FontAwesomeIcon icon={click ? faClose : faBars } /> */}
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
           
             <li className='nav-item'>
               <Link href='/' className='nav-links' onClick={closeMobileMenu}>
