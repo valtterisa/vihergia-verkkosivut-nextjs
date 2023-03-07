@@ -1,10 +1,7 @@
 import React, {useEffect} from 'react'
 import Head from 'next/head'
-import { Navbar } from '../src/komponentit/Navbar/Navbar'
-import { YhteystiedotInfo } from '../src/komponentit/YhteystiedotInfo/YhteystiedotInfo'
-import { OtaYhteytta } from '../src/komponentit/OtaYhteytta/OtaYhteytta'
-import { Footer } from '../src/komponentit/Footer/Footer'
-import Cookies from '../src/komponentit/Cookies'
+import { YhteystiedotInfo } from '../src/komponentit/YhteystiedotInfo'
+import { OtaYhteytta } from '../src/komponentit/OtaYhteytta'
 
 export const Yhteystiedot = () => {
 

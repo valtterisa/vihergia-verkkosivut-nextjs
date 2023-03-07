@@ -1,8 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Navbar } from '../src/komponentit/Navbar/Navbar'
-import { KiitosTeksti } from '../src/komponentit/KiitosTeksti/KiitosTeksti'
-import { Footer } from '../src/komponentit/Footer/Footer'
+import { KiitosTeksti } from '../src/komponentit/KiitosTeksti'
 
 export const Kiitos = () => {
 

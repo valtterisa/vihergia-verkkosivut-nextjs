@@ -1,9 +1,6 @@
 import React, {useEffect} from 'react';
 import Head from 'next/head';
-import { Navbar } from '../src/komponentit/Navbar/Navbar'
-import { TietoaMeista } from '../src/komponentit/TietoaMeista/TietoaMeista'
-import { Footer } from '../src/komponentit/Footer/Footer'
-import Cookies from '../src/komponentit/Cookies';
+import { TietoaMeista } from '../src/komponentit/TietoaMeista'
 
 export const Tietoa = () => {
 
