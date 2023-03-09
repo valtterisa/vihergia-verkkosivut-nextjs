@@ -1,13 +1,10 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head'
 
-import { Navbar } from '../src/komponentit/Navbar/Navbar'
-import { HeroSection } from '../src/komponentit/HeroSection/HeroSection'
-import { Info } from '../src/komponentit/Info/Info'
-import { Team } from '../src/komponentit/Team/Team'
-import { ReferenssitInfo } from '../src/komponentit/ReferenssitInfo/ReferenssitInfo'
-import { Footer } from '../src/komponentit/Footer/Footer'
-import Cookies from '../src/komponentit/Cookies';
+import { HeroSection } from '../src/komponentit/HeroSection'
+import { Info } from '../src/komponentit/Info'
+import { Team } from '../src/komponentit/Team'
+import { ReferenssitInfo } from '../src/komponentit/ReferenssitInfo'
 
 export default function Etusivu() {
 

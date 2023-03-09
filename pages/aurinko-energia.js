@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import { Navbar } from '../src/komponentit/Navbar/Navbar'
-import { AurinkoInfo } from '../src/komponentit/AurinkoInfo/AurinkoInfo'
-import { Footer } from '../src/komponentit/Footer/Footer'
-import Cookies from '../src/komponentit/Cookies';
+import { AurinkoInfo } from '../src/komponentit/AurinkoInfo'
 
 export const Aurinko = () => {
 

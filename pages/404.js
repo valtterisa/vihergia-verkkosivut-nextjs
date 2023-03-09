@@ -1,7 +1,5 @@
 import React from 'react'
-import Navbar from '../src/komponentit/Navbar/Navbar'
-import Footer from '../src/komponentit/Footer/Footer'
-import { Button } from '../src/komponentit/Button/Button'
+import { Button } from '../src/komponentit/Button'
 import Link from 'next/link'
 
 
