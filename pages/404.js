@@ -7,7 +7,7 @@ function Error() {
   return (
     <div>
         <div className='error-container'>
-          <h1>404 - Page Not Found</h1>
+          <h1>404 - Sivua ei löytynyt</h1>
           <p>Umpikuja. Sivua ei valitettavasti ole olemassa :(</p>  
           <Link href="/" className="error-link"><Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>Palaa etusivulle</Button></Link>
         </div>
