@@ -5,9 +5,11 @@ import Image from 'next/image';
 import { Squash as Hamburger } from 'hamburger-react'
 import SubMenuPalvelut from './SubMenuPalvelut';
 import DownArrow from './DownArrow';
+import { useRouter } from 'next/router';
 
 export const Navbar = () => {
     const ref = useRef();
+    const router = useRouter();
 
     const [button, setButton] = useState(true);
     const [isOpen, setOpen] = useState(false)
@@ -57,13 +59,13 @@ export const Navbar = () => {
           <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
           
             <li className='nav-item'>
-              <Link href='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link href='/' className={router.pathname == "/" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
                 Etusivu
               </Link>
             </li>
 
             <li className='nav-item' ref={ref}>
-              <div onClick={handleClickSub} className='nav-links' style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+              <div onClick={handleClickSub} className={router.pathname == "/palvelumme" ? "nav-links active" : "nav-links"} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                 <p>Palvelumme</p>
                 <DownArrow/>
               </div>
@@ -75,25 +77,25 @@ export const Navbar = () => {
             </li>
 
             <li className='nav-item'>
-              <Link href='/referenssit' className='nav-links' onClick={closeMobileMenu}>
+              <Link href='/referenssit' className={router.pathname == "/referenssit" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
                 Referenssit
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link href='/yhteystiedot' className='nav-links' onClick={closeMobileMenu}>
+              <Link href='/yhteystiedot' className={router.pathname == "/yhteystiedot" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
                 Yhteystiedot
               </Link>
             </li>
 
             <li className='nav-item'>
-              <Link href='/tietoa-meista' className='nav-links' onClick={closeMobileMenu}>
+              <Link href='/tietoa-meista' className={router.pathname == "/tietoa-meista" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
                 Tietoa meistä
               </Link>
             </li>
 
             <li className='nav-item-tarjous'>
-              <Link href="/palvelumme/#tarjous" onClick={closeMobileMenu} className='nav-links-tarjous'>PYYDÄ TARJOUS</Link>
+              <Link href="/palvelumme/#tarjous" onClick={closeMobileMenu} className='nav-links active-tarjous'>PYYDÄ TARJOUS</Link>
             </li>
             
           </ul>
