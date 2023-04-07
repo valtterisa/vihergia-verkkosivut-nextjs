@@ -472,7 +472,7 @@ video {
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-gap: 5px;
   list-style: none;
   text-align: center;
   width: 60vw;
@@ -488,6 +488,37 @@ video {
 .nav-item-tarjous {
   height: 80px;
   display: none;
+}
+
+.submenu-container {
+  display: block;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-top: none;
+  min-width: 180px;
+  position: absolute;
+  text-align: start;
+}
+
+.submenu-container.clicked {
+  display: none; 
+}
+
+.submenu-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.submenu-container li {
+  list-style: none;
+  padding: 10px;
+}
+
+.submenu-container li:hover {
+  background-color: lightgray;
+  transition: ease-in-out 200ms; 
 }
 
 .nav-links {
@@ -636,6 +667,7 @@ video {
     color: black;
 
   }
+
 }
 
 /* OtaYhteyttä.css */

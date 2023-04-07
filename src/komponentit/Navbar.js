@@ -1,15 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from './Button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Squash as Hamburger } from 'hamburger-react'
+import SubMenuPalvelut from './SubMenuPalvelut';
+import DownArrow from './DownArrow';
 
 export const Navbar = () => {
+    const ref = useRef();
+
     const [button, setButton] = useState(true);
     const [isOpen, setOpen] = useState(false)
 
     const handleClick = () => setOpen(!isOpen);
     const closeMobileMenu = () => setOpen(false);
+
+    // navigointipalkin alamenu
+    const [isOpenSub, setOpenSub] = useState(false)
+    const handleClickSub = () => setOpenSub(!isOpenSub);
 
     // määritellään milloin hampurilaismenu näkyy
     const showButton = () => {
@@ -20,9 +28,17 @@ export const Navbar = () => {
       }
     };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+    // klikkaamalla ulkona submenusta -> häviää
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+          setOpenSub(false);
+      }
+    };
+
+    useEffect(() => {
+      document.addEventListener("click", handleClickOutside, true);
+      showButton();
+    }, []);
 
   return (
     <>
@@ -46,10 +62,16 @@ export const Navbar = () => {
               </Link>
             </li>
 
-            <li className='nav-item'>
-              <Link href='/palvelumme' className='nav-links' onClick={closeMobileMenu}>
-                Palvelumme
-              </Link>
+            <li className='nav-item' ref={ref}>
+              <div onClick={handleClickSub} className='nav-links' style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+                <p>Palvelumme</p>
+                <DownArrow/>
+              </div>
+              
+              <div className={isOpenSub ? 'submenu-container' : 'submenu-container clicked'}>
+                <SubMenuPalvelut/>
+              </div>
+  
             </li>
 
             <li className='nav-item'>
