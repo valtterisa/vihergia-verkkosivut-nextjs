@@ -1,34 +1,30 @@
-import React from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 function SubMenuPalvelut() {
-    const router = useRouter();
+  const router = useRouter();
+  return (
+    <>
+      <li className="submenu-item">
+        <Link className="submenu-link" href="/aurinkoenergia">
+          Aurinkoenergia
+        </Link>
+      </li>
 
-    return (
-    <div className='submenu-container'>
-        <ul className='submenu-content'>
-            <li className='submenu-item'>
-                <Link href="/aurinkoenergia" className={router.pathname == "/aurinkoenergia" ? "submenu-item active" : "submenu-item"}>
-                    Aurinkoenergia
-                </Link>
-            </li>
+      <li className="submenu-item">
+        <Link className="submenu-link" href="/ilmalampo">
+          Ilmalämpöpumput
+        </Link>
+      </li>
 
-            <li className='submenu-item'>
-                <Link href="/ilmalampo" className={router.pathname == "/ilmalampo" ? "submenu-item active" : "submenu-item"}>
-                    Ilmalämpöpumput
-                </Link>
-            </li>
-
-            <li className='submenu-item'>
-                <Link href="/kattopalvelut" className={router.pathname == "/kattopalvelut" ? "submenu-item active" : "submenu-item"}>
-                    Katon pinnoitus- ja korjauspalvelut
-                </Link>
-            </li>
-        </ul>
-    </div>
-  )
+      <li className="submenu-item">
+        <Link className="submenu-link" href="/kattopalvelut">
+          Katon pinnoitus- ja korjauspalvelut
+        </Link>
+      </li>
+    </>
+  );
 }
 
-export default SubMenuPalvelut
+export default SubMenuPalvelut;
