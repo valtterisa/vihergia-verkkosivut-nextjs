@@ -72,9 +72,9 @@ export const Footer = () => {
               <i class='fab fa-linkedin' />
             </Link> */}
           </div>
-          <p>Toni Pystö</p>
-          <p>044 088 3886</p>
-          <p>toni.pysto@vihergia.fi</p>
+          <p>Jere Haikarainen</p>
+          <p>040 4180667</p>
+          <p>jak.haikarainen@gmail.com</p>
         </div>
           
         </div>
